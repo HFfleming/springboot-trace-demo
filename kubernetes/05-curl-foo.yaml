@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: loadgenerator
+  namespace: tracing
+  labels:
+    app: loadgenerator
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: loadgenerator
+      version:  v1
+  template:
+    metadata:
+      labels:
+        app: loadgenerator
+        version:  v1
+    spec:
+      containers:
+        - name: curl
+          image: docker.io/litmuschaos/curl:latest
+          imagePullPolicy: IfNotPresent
+          command:
+            - /bin/sh
+            - -exc
+            - |
+              while true
+              do
+              curl -i foo-svc
+              sleep 3
+              done
