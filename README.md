@@ -31,7 +31,7 @@ dockerfile文件已经写好，直接docker build即可制作镜像。
 
 其中loadgenerator是用来访问foo-svc的。查看其日志可发现:
 
-```yaml
+```bash
 Foo Request headers:
 	host: foo-svc
 	user-agent: curl/7.81.0-DEV
