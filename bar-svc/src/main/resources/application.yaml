@@ -1,0 +1,10 @@
+server:
+  port: ${SERVER_PORT:8080}
+
+loo-svc:
+  #url: http://localhost:8082
+  url: ${LOO_SVC_URL:http://loo-svc:8080}
+
+spring:
+  application:
+    name: bar-svc
