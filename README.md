@@ -29,8 +29,10 @@ dockerfile文件已经写好，直接docker build即可制作镜像。
 
 ![image-20240205111656838](assets/image-20240205111656838.png)
 
+该项目访问效果如下：
+![image-202402051144](assets/img-202402051144.png)
+---
 其中loadgenerator是用来访问foo-svc的。查看其日志可发现:
-
 ```bash
 Foo Request headers:
 	host: foo-svc
