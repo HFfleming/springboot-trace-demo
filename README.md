@@ -19,7 +19,7 @@ main分支代码为初始版，未实现任何分布式跟踪。可以基于main
 
 dockerfile文件已经写好，直接docker build即可制作镜像。
 
-![image-20240205103708821](/Users/hufei/工作使用/MarkDown文档/assets/image-20240205103708821.png)
+![image-20240205103708821](assets/image-20240205103708821.png)
 
 ---
 
@@ -27,11 +27,11 @@ dockerfile文件已经写好，直接docker build即可制作镜像。
 
 容器化部署 运行在kubernetes集群中。部署文件请参考 kubernetes文件夹下的资源清单
 
-![image-20240205111656838](/Users/hufei/工作使用/MarkDown文档/assets/image-20240205111656838.png)
+![image-20240205111656838](assets/image-20240205111656838.png)
 
 其中loadgenerator是用来访问foo-svc的。查看其日志可发现:
 
-```json
+```yaml
 Foo Request headers:
 	host: foo-svc
 	user-agent: curl/7.81.0-DEV
