@@ -34,7 +34,7 @@ spec:
     spec:
       containers:
         - name: bar-svc
-          image: swr.cn-north-4.myhuaweicloud.com/k8s-solution/bar-svc:v1
+          image: swr.cn-north-4.myhuaweicloud.com/k8s-solution/bar-svc:v2
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080

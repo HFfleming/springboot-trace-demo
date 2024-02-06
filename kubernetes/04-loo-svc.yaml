@@ -32,7 +32,7 @@ spec:
     spec:
       containers:
         - name: loo-svc
-          image: swr.cn-north-4.myhuaweicloud.com/k8s-solution/loo-svc:v1
+          image: swr.cn-north-4.myhuaweicloud.com/k8s-solution/loo-svc:v2
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 8080
