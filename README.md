@@ -1,10 +1,9 @@
 # springboot-trace-demo
 
-springboot项目如何实现分布式Tracing。
-
-main分支代码为初始版，未实现任何分布式跟踪。可以基于main分支进行功能定制
-tag: autoconfigure版本通过opentelemetry-java sdk 实现自动埋点，以java agent形式运行。
-自动埋点配置可以参考：https://github.com/open-telemetry/opentelemetry-java/tree/main/sdk-extensions/autoconfigure#tracer-provider
+1. springboot项目如何实现分布式Tracing
+2. main分支代码为初始版，未实现任何分布式跟踪。可以基于main分支进行功能定制
+3. tag: autoconfigure版本通过opentelemetry-java sdk 实现自动埋点，以java agent形式运行。
+4. 自动埋点配置可以参考：https://github.com/open-telemetry/opentelemetry-java/tree/main/sdk-extensions/autoconfigure#tracer-provider
 ---
 
 ## 项目介绍
