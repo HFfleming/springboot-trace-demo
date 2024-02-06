@@ -28,5 +28,5 @@ spec:
               while true
               do
               curl -i foo-svc
-              sleep 3
+              sleep 180
               done
